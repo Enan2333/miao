@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+/*     * {
+      background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 0 1px red;
+    } */
+    div{
+      font-size: 0px;
+      height: 800px;
+    }
+    div.left {
+      background-color: pink;
+      display: inline-block;
+      font-size: 0px;
+      height: 800px;
+      margin: 0px;
+      /* width: 120px; */
+    }
+    h1 {
+      width: 160px;
+      height: 5%;
+      margin: 0px;
+      font-size: 32px;
+    }
+    
+    div.top {
+      height: 2%;
+    }
+    
+    input {
+      width: 60%;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    button {
+      margin: 0px;
+      background-color: red; /* 按钮背景 */
+      border: 1px solid #000; /* 边框 */
+      padding: 5px 10px; /* 内边距 */
+      vertical-align: middle; 
+    }
+    
+    div.left-down{
+      overflow: auto;
+      height: 93%;
+    }
+    
+    ul {
+      display: block;
+      
+      font-size: 16px;
+      margin-top: 5%;
+      margin: 0px;
+      overflow: auto;
+    }
+    
+    div.middle {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0px;
+      width: calc(50% - 2px);
+      height: 800px;
+      margin: 0px;
+      border: 1px solid;
+      border-top: 0;
+      border-bottom: 0;
+      background-color: white;
+    }
+    
+    h1.c {
+      width: 100%;
+      height: (5% - 3px);
+      margin: 0px;
+      font-size: 32px;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+    
+    div.right {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0px;
+      height: 800px;
+      width: calc(47.4% - 170px);
+      margin: 0px;
+      background-color: violet;
+    }
+    
+    h1.b {
+      display: inline-block;
+      font-size: 32px;
+      width: 50%; 
+      text-align: right;
+    }
+    
+    h1.a {
+      display: inline-block;
+      font-size: 32px;
+      width: calc(49.8% - 1px);
+      height: 100%;
+      border-right: 1px solid blue;
+      text-align: right;
+    }
+    
+    span.down {
+      display: block;
+      height: 95%;
+      font-size: 16px;
+      overflow: auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <div>
+    
+  <div class = "left">
+    <h1>单词练习</h1>
+    <div class = "top">
+    <input type="text">
+    <button></button>
+    </div>
+    <div class = "left-down">
+    <ul>
+      <li><a href="">word1</a> </li>
+      <li><a href="">word2</a> </li>
+      <li><a href="">word3</a> </li>
+      <li><a href="">word4</a> </li>
+      <li><a href="">word5</a> </li>
+      <li><a href="">word6</a> </li>
+      <li><a href="">word7</a> </li>
+      <li><a href="">word8</a> </li>
+      <li><a href="">word9</a> </li>
+      <li><a href="">word10</a> </li>
+      <li><a href="">word11</a> </li>
+      <li><a href="">word12</a> </li>
+      <li><a href="">word13</a> </li>
+      <li><a href="">word14</a> </li>
+      <li><a href="">word15</a> </li>
+      <li><a href="">word16</a> </li>
+      <li><a href="">word17</a> </li>
+      <li><a href="">word18</a> </li>
+      <li><a href="">word19</a> </li>
+      <li><a href="">word20</a> </li>
+      <li><a href="">word21</a> </li>
+      <li><a href="">word22</a> </li>
+      <li><a href="">word23</a> </li>
+      <li><a href="">word24</a> </li>
+      <li><a href="">word25</a> </li>
+      <li><a href="">word26</a> </li>
+      <li><a href="">word27</a> </li>
+      <li><a href="">word28</a> </li>
+      <li><a href="">word29</a> </li>
+      <li><a href="">word30</a> </li>
+      <li><a href="">word31</a> </li>
+      <li><a href="">word1</a> </li>
+      <li><a href="">word2</a> </li>
+      <li><a href="">word3</a> </li>
+      <li><a href="">word4</a> </li>
+      <li><a href="">word5</a> </li>
+      <li><a href="">word6</a> </li>
+      <li><a href="">word7</a> </li>
+      <li><a href="">word8</a> </li>
+      <li><a href="">word9</a> </li>
+      <li><a href="">word10</a> </li>
+      <li><a href="">word11</a> </li>
+      <li><a href="">word12</a> </li>
+      <li><a href="">word13</a> </li>
+      <li><a href="">word14</a> </li>
+      <li><a href="">word15</a> </li>
+      <li><a href="">word16</a> </li>
+      <li><a href="">word17</a> </li>
+      <li><a href="">word18</a> </li>
+      <li><a href="">word19</a> </li>
+      <li><a href="">word20</a> </li>
+      <li><a href="">word21</a> </li>
+      <li><a href="">word22</a> </li>
+      <li><a href="">word23</a> </li>
+      <li><a href="">word24</a> </li>
+      <li><a href="">word25</a> </li>
+      <li><a href="">word26</a> </li>
+      <li><a href="">word27</a> </li>
+      <li><a href="">word28</a> </li>
+      <li><a href="">word29</a> </li>
+      <li><a href="">word30</a> </li>
+      <li><a href="">word31</a> </li>
+    </ul>
+    </div>
+  </div>
+  
+  <div class = "middle">
+    <h1 class = "c">英语正文</h1>
+    <div class="middle-down">
+    <span class = "down"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati, reiciendis. Ea veniam molestiae neque, recusandae provident incidunt excepturi, quia voluptates esse? Voluptas nulla molestias explicabo officiis culpa, quod adipisci.</span>
+    <span>Provident alias in odio doloribus tenetur, dolores amet eos enim qui incidunt error repudiandae autem laborum temporibus dolorum libero facere hic mollitia possimus veniam nisi quidem. Excepturi aperiam minus maiores.</span>
+    <span>Ullam voluptatum hic, placeat ex quis corporis esse deserunt nihil temporibus, harum atque aliquam, dolor consectetur, tenetur veniam excepturi sint doloremque a beatae. Eum libero dolores atque cupiditate nihil consequuntur.</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sint molestiae ipsam, delectus, odit excepturi enim esse. Voluptates quidem quibusdam tempore iste assumenda suscipit, dignissimos dolores reprehenderit, rerum odit nobis.</span>
+    <span>Nobis voluptatibus inventore laudantium, est vitae iste quos eos. Quos placeat et quasi dolorem eveniet. Explicabo magni, nobis labore fugit quae! Quo possimus iste nisi obcaecati totam pariatur fuga id.</span>
+    <span>Earum aperiam blanditiis, officia saepe alias odio consequuntur officiis ea aspernatur delectus beatae, nihil enim dolor eveniet amet animi nostrum repellat dolore. Rem qui nostrum consequatur. Rerum labore, natus accusantium!</span>
+    <span>Quidem minus, repellat obcaecati eligendi qui illum atque facilis, unde quos sint in quasi perspiciatis. Ipsam expedita inventore iste dolorum, non ratione consectetur quia, unde veniam aliquid reiciendis harum nostrum.</span>
+    <span>Recusandae similique dolores dicta vel, placeat a eum velit illum id porro aliquam omnis sed ex repellendus voluptatibus quae tenetur eligendi voluptate delectus temporibus vitae, quas quo facere. Dicta, aliquid.</span>
+    <span>Vel esse aspernatur excepturi odio velit deserunt enim eaque adipisci totam culpa neque dolore, possimus id fuga numquam! Placeat necessitatibus aut nobis hic deleniti nesciunt dolore sequi saepe aspernatur voluptatem.</span>
+    <span>Ratione tempora dicta iste temporibus ullam laudantium explicabo! Laudantium, vel porro. Fugit excepturi quisquam odit vitae perferendis quae odio nam molestias. Ipsum, voluptas voluptates molestias pariatur error, iure nihil sint.</span>
+    <span>Optio quis eos aut, vero consequatur quasi facere architecto rem, mollitia fugit quisquam ex. Adipisci voluptas at, voluptatum laboriosam, voluptatibus facilis ratione necessitatibus beatae ea architecto iste a! Molestiae, veritatis.</span>
+    <span>Impedit assumenda eaque quam illo, sequi, aperiam amet quae. Nobis molestiae distinctio placeat aspernatur aperiam quasi ipsam eum nostrum illo repellat, perferendis sint accusantium sapiente laudantium? Culpa, ipsam dolorem sequi!</span>
+    <span>Aperiam, quidem voluptatum ipsa perferendis delectus molestias illo excepturi atque saepe. Exercitationem, odit! Doloremque nobis ullam culpa, aliquam dolore similique nisi optio aspernatur fuga illo laboriosam provident est earum dignissimos.</span></span>
+    </div>
+    </div>
+  
+  <div class = "right">
+    <h1 class = "a">词汇</h1>
+    <h1 class = "b">history</h1>
+  </div>
+    
+  </div>
+
+</body>
+</html>

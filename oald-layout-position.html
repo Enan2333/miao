@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 1px red;
+    }
+
+    html, body {
+        height: 100vh;
+        margin: 0px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+    
+
+    div {
+        font-size: 0px;
+        height: 100%;
+    }
+    
+    aside {
+        height: 100%;
+    }
+    
+    aside.left {
+        position: relative;
+        font-size: 16px;
+        width: 160px;
+        height: 100%;
+        background-color: pink;
+        border: 1px solid;
+    }
+    
+    header {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    header.left {
+        position: absolute;
+        height: 100px;
+        width: 160px;
+        line-height: 100px;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box; 
+    }
+
+    input {
+        position: absolute;
+        left: 10px;
+        top: 100px;
+        height: 16px;
+        width: 80px;
+    }
+
+    button {
+        position: absolute;
+        left: 100px;
+        top:105px;
+        height: 10px;
+        width: 20px;
+    }
+
+    main.left {
+        position: absolute;
+        top: 120px;
+        overflow: auto;
+        width: 100%;
+        height: calc(100% - 120px);
+    }
+
+    section {
+        position: absolute;
+        font-size: 16px;
+        top: 0px;
+        left: 160px;
+        width: calc(100% - 560px);
+        background-color: greenyellow;
+        border: 1px solid;
+        height: 100%;
+    }
+
+    header.right {
+        height:100px;
+        padding-right: 20px;
+        line-height: 100px;
+        text-align: right;
+        border: 1px solid;
+        box-sizing: border-box;
+    }
+
+    aside.right1 {
+        position: absolute;
+        top: 0px;
+        right: 200px;
+        width: 200px;
+        background-color: pink;
+        border: 1px solid;
+        box-sizing: border-box;
+    }
+
+    aside.right2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 200px;
+        background-color: pink;
+    }
+
+    header.a {
+        height: 100px;
+        line-height: 100px;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    header.b {
+        height: 100px;
+        line-height: 100px;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    main.right {
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        height: calc(100% - 100px);
+        overflow: auto;
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+    
+
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <aside class = "left">
+        <header class = "left">单词表</header>
+        <input type="text">
+        <button></button>
+        <main class = "left">
+        <ul>
+          <li><a href="" herf="">word1</a></li>
+          <li><a href="" herf="">word2</a></li>
+          <li><a href="" herf="">word3</a></li>
+          <li><a href="" herf="">word4</a></li>
+          <li><a href="" herf="">word5</a></li>
+          <li><a href="" herf="">word6</a></li>
+          <li><a href="" herf="">word7</a></li>
+          <li><a href="" herf="">word8</a></li>
+          <li><a href="" herf="">word9</a></li>
+          <li><a href="" herf="">word10</a></li>
+          <li><a href="" herf="">word11</a></li>
+          <li><a href="" herf="">word12</a></li>
+          <li><a href="" herf="">word13</a></li>
+          <li><a href="" herf="">word14</a></li>
+          <li><a href="" herf="">word15</a></li>
+          <li><a href="" herf="">word16</a></li>
+          <li><a href="" herf="">word17</a></li>
+          <li><a href="" herf="">word18</a></li>
+          <li><a href="" herf="">word19</a></li>
+          <li><a href="" herf="">word20</a></li>
+          <li><a href="" herf="">word21</a></li>
+          <li><a href="" herf="">word22</a></li>
+          <li><a href="" herf="">word23</a></li>
+          <li><a href="" herf="">word24</a></li>
+          <li><a href="" herf="">word25</a></li>
+          <li><a href="" herf="">word26</a></li>
+          <li><a href="" herf="">word27</a></li>
+          <li><a href="" herf="">word28</a></li>
+          <li><a href="" herf="">word29</a></li>
+          <li><a href="" herf="">word30</a></li>
+          <li><a href="" herf="">word31</a></li>
+          <li><a href="" herf="">word32</a></li>
+          <li><a href="" herf="">word33</a></li>
+          <li><a href="" herf="">word34</a></li>
+          <li><a href="" herf="">word35</a></li>
+          <li><a href="" herf="">word36</a></li>
+          <li><a href="" herf="">word37</a></li>
+          <li><a href="" herf="">word38</a></li>
+          <li><a href="" herf="">word39</a></li>
+          <li><a href="" herf="">word40</a></li>
+          <li><a href="" herf="">word41</a></li>
+          <li><a href="" herf="">word42</a></li>
+          <li><a href="" herf="">word43</a></li>
+          <li><a href="" herf="">word44</a></li>
+          <li><a href="" herf="">word45</a></li>
+          <li><a href="" herf="">word46</a></li>
+          <li><a href="" herf="">word47</a></li>
+          <li><a href="" herf="">word48</a></li>
+          <li><a href="" herf="">word49</a></li>
+          <li><a href="" herf="">word50</a></li>
+          <li><a href="" herf="">word51</a></li>
+          <li><a href="" herf="">word52</a></li>
+          <li><a href="" herf="">word53</a></li>
+          <li><a href="" herf="">word54</a></li>
+          <li><a href="" herf="">word55</a></li>
+          <li><a href="" herf="">word56</a></li>
+          <li><a href="" herf="">word57</a></li>
+          <li><a href="" herf="">word58</a></li>
+          <li><a href="" herf="">word59</a></li>
+          <li><a href="" herf="">word60</a></li>
+    </main>
+        </ul>
+    </aside>
+    <section>
+        <header class = "right">lorem200</header>
+        <main class = "right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, ut! Voluptas, earum inventore in explicabo voluptate perspiciatis enim accusantium. Aut voluptates ipsam, corporis perspiciatis quaerat tempore aperiam ullam, quos repellat temporibus molestiae! Vel atque recusandae fuga esse! Id reprehenderit vitae aliquid fugit nulla tempore expedita voluptas soluta obcaecati! Suscipit omnis quis ullam molestias perferendis deserunt soluta eveniet doloribus minima dolores maxime sed autem a voluptates tempora, vel accusantium iusto optio ratione repellendus labore quisquam corporis. Ratione impedit, quas officiis illum adipisci fugiat, aperiam vel quibusdam expedita error temporibus, maxime veniam incidunt cumque enim tempore. Molestiae modi earum numquam unde accusamus repellat voluptas! Quo nihil doloremque cum architecto impedit voluptates natus! Laudantium quos repellat itaque blanditiis ut iste ratione eum, eius dolores aliquam alias minima exercitationem facere, voluptate perspiciatis dolorem asperiores! Maxime dolore et aliquid quae vitae doloribus iure! Ducimus velit sequi fugiat esse repellat obcaecati quam provident, minima voluptatum, aliquid hic doloremque, suscipit voluptate quaerat quisquam magnam aperiam tenetur distinctio consequuntur officiis! Molestias dolore fuga dolores facilis nihil deleniti dolorum, ad laboriosam recusandae obcaecati saepe maxime error nemo, rem animi at atque nam. Omnis ut et repudiandae molestias quo iste reprehenderit delectus minus. Eaque voluptate temporibus impedit, exercitationem corrupti sae100px;</main>
+    </section>
+    <aside class = "right1"><header class = "a">单词记录</header></aside>
+    <aside class = "right2"><header class = "b">单词表现</header></aside>
+    
+  </div>
+
+</body>
+</html>

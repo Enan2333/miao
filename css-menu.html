@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 1px red;
+        }
+
+        div {
+            
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul.first > li {
+            position: relative;
+            display:inline-block;
+            border-radius: 5px;
+            padding: 2px 5px;
+            background-color: whitesmoke;
+            margin: 3px 0px;
+        }
+        
+         
+        ul.first li.active > ul {
+            display: block;
+        }
+
+        ul.first li:hover > ul {
+            background-color: white;
+            display: block;
+        }
+
+        ul.first li ul{
+            position: absolute;
+            padding: 0px;
+            left: 0px;
+            width: 200px;
+        }
+        
+        ul.first > li > ul {
+            display:none;
+            background-color: whitesmoke;
+            position: absolute;
+            border-radius: 5px;
+            margin: 0px 3px;
+        }
+
+        span {
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class = "first">
+            <li>文件(F)
+                <ul>
+                    <li>新建文本文档</li>
+                    <li>新建文件</li>
+                    <li>新建窗口</li>
+                    <li>使用配置文件新建窗口  <span>></span></li>
+                </ul>
+                  
+            </li>
+            <li>编辑(E)</li>
+            <li>选择(S)</li>
+            <li>查看(V)</li>
+            <li>转到(G)</li>   
+        </ul>
+    </div>
+</body>
+</html>

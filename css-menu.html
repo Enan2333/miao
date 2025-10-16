@@ -31,6 +31,7 @@
          
         ul.first li.active > ul {
             display: block;
+            background-color: grey;
         }
 
         ul.first li:hover > ul {
@@ -42,12 +43,12 @@
             position: absolute;
             padding: 0px;
             left: 0px;
-            width: 200px;
+            white-space: nowrap;
+            z-index: 100;
         }
         
         ul.first > li > ul {
-            display:none;
-            background-color: whitesmoke;
+            /* display:none; */
             position: absolute;
             border-radius: 5px;
             margin: 0px 3px;
